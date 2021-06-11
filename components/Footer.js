@@ -4,10 +4,12 @@ const Footer = () => {
   return (
     <Flex
       justifyContent="center"
-      position="fixed"
-      bottom="-80px"
-      p={8}
+      position="sticky"
+      bottom="0"
+      p={6}
       w="100%"
+      borderTop="1px solid rgb(218, 218, 218);"
+      bg="white"
     >
       <Stack isInline spacing={10}>
         <div>
