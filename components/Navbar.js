@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <Flex as="header" bg="primary" className={styles.navbar}>
       <div>
-        <Image src="harbourLogo.svg" fill="white" h="15px"></Image>
+        <Image src="harbourLogo.svg" fill="white" h="15px" alt="logo"></Image>
       </div>
       <Stack isInline alignItems="center" position="relative" spacing={7}>
         <div className={styles.apply_now}>

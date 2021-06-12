@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import { getData } from "lib/api";
 import Faqs from "@/components/Faqs";
 import { Box } from "@chakra-ui/layout";
+import About from "@/components/About";
 
 export default function Home({ data }) {
   console.log(data);
@@ -15,6 +16,7 @@ export default function Home({ data }) {
       </Head>
       <Layout details={data.scholarship}>
         <Main details={data.scholarship} />
+        <About details={data.scholarship} />
         <Faqs faqs={data.scholarship.faqs} />
       </Layout>
     </Box>

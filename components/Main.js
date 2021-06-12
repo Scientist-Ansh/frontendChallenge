@@ -2,7 +2,7 @@ import { Container, SimpleGrid, Box, Heading, Text } from "@chakra-ui/react";
 const Main = ({ details }) => {
   console.log(details);
   return (
-    <Container maxW="container.lg" py="100px">
+    <Container as="main" maxW="container.lg" py="100px">
       <SimpleGrid columns={{ md: 2 }} spacingX="60px" margin="0 auto">
         <Box>
           <Heading as="h1" color="primary" fontWeight="medium">

@@ -6,6 +6,7 @@
   height: 70px;
   padding: 30px;
   top: 0;
+  z-index: 1;
 }
 
 .apply_now {
