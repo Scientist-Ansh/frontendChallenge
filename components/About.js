@@ -38,7 +38,7 @@ const About = ({ details }) => {
         <Box pt="80px" pl="20px">
           <Heading
             as="h2"
-            fontWeight="medium"
+            fontWeight="semibold"
             color="primary"
             fontSize="48"
             mb="40px"
@@ -48,7 +48,7 @@ const About = ({ details }) => {
           <Text>{about[0].data}</Text>
         </Box>
       </SimpleGrid>
-      <Flex mt="70px">
+      <Flex mt="70px" lineHeight="short" fontSize="short">
         <Flex
           direction="column"
           justifyContent="space-between"
@@ -60,7 +60,7 @@ const About = ({ details }) => {
           mr="25px"
         >
           <Box>
-            <Text color="primary" fontWeight="medium">
+            <Text color="primary" fontWeight="semibold">
               Scholarship Value
             </Text>
             <Text>{`€${total_value}`}</Text>
@@ -69,20 +69,22 @@ const About = ({ details }) => {
             <Divider mb="40px" />
             <Flex justifyContent="space-between">
               <div>
-                <Text color="primary" fontWeight="medium">
+                <Text color="primary" fontWeight="semibold">
                   Tuition covered
                 </Text>
                 <Text>{`€${tuition}`}</Text>
               </div>
               <div>
-                <Text color="primary" fontWeight="medium">
+                <Text color="primary" fontWeight="semibold">
                   Remaining
                 </Text>
                 <Text>{`€${total_value - tuition}`}</Text>
               </div>
             </Flex>
             <Box mt="20px">
-              <Text color="primary">Living stipend</Text>
+              <Text color="primary" fontWeight="semibold">
+                Living stipend
+              </Text>
               <Text>{`€${stipend_per_year} (€${stipend_per_month}/month)`}</Text>
             </Box>
           </Box>
@@ -96,7 +98,7 @@ const About = ({ details }) => {
             p="32px 20px"
             mr="25px"
           >
-            <Text color="primary" fontWeight="medium">
+            <Text color="primary" fontWeight="semibold">
               Study commitment
             </Text>
             <Text mt="8px" mb="22px">
@@ -115,7 +117,7 @@ const About = ({ details }) => {
             borderRadius="4px"
             p="32px 20px"
           >
-            <Text color="primary" fontWeight="medium">
+            <Text color="primary" fontWeight="semibold">
               Work commitment
             </Text>
             <Text mt="8px" mb="22px">
@@ -139,7 +141,7 @@ const About = ({ details }) => {
             p="32px 40px"
             w="100%"
           >
-            <Text color="primary" fontWeight="medium">
+            <Text color="primary" fontWeight="semibold">
               A full-time contract
             </Text>
             <Text>

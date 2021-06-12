@@ -25,29 +25,29 @@ const Footer = ({
       borderTop="1px solid rgb(218, 218, 218);"
       bg="white"
     >
-      <Stack isInline spacing={10}>
+      <Stack isInline spacing={10} fontSize="short" lineHeight="short">
         <div>
-          <Text fontWeight="medium">{companyName}</Text>
+          <Text fontWeight="semibold">{companyName}</Text>
           <Text>{position ? position : programName}</Text>
         </div>
         <div>
-          <Text fontWeight="medium">Location</Text>
+          <Text fontWeight="semibold">Location</Text>
           <Text>{location.name}</Text>
         </div>
         <div>
-          <Text fontWeight="medium">Duration</Text>
+          <Text fontWeight="semibold">Duration</Text>
           <Text>{duration} Year</Text>
         </div>
         <div>
-          <Text fontWeight="medium">Start Date</Text>
+          <Text fontWeight="semibold">Start Date</Text>
           <Text>{getDate(startDate)}</Text>
         </div>
         <div>
-          <Text fontWeight="medium">Application Deadline</Text>
+          <Text fontWeight="semibold">Application Deadline</Text>
           <Text>{getDate(deadline)}</Text>
         </div>
         <div>
-          <Text fontWeight="medium">Application closes in</Text>
+          <Text fontWeight="semibold">Application closes in</Text>
           <Text>some time</Text>
         </div>
       </Stack>

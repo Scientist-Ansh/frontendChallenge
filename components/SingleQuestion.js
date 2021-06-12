@@ -17,11 +17,11 @@ const SingleQuestion = ({ question }) => {
           justifyContent="space-between"
           p="30px 15px 30px 5px"
         >
-          <Text color="primary" fontWeight="medium" minW="250px">
+          <Text color="primary" fontWeight="semibold" minW="250px">
             {question.type}
           </Text>
 
-          <Text fontWeight="medium" flex={1}>
+          <Text fontWeight="semibold" flex={1}>
             {question.question}
           </Text>
 

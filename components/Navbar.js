@@ -9,7 +9,14 @@ const Navbar = () => {
       </div>
       <Stack isInline alignItems="center" position="relative" spacing={7}>
         <div className={styles.apply_now}>
-          <Box as="span" m="auto auto" textAlign="center">
+          <Box
+            as="span"
+            m="auto auto"
+            textAlign="center"
+            fontWeight="semibold"
+            lineHeight="short"
+            fontSize="short"
+          >
             Apply
             <br />
             Now

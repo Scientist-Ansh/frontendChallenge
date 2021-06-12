@@ -5,6 +5,7 @@ import { getData } from "lib/api";
 import Faqs from "@/components/Faqs";
 import { Box } from "@chakra-ui/layout";
 import About from "@/components/About";
+import SingleTestimonial from "@/components/SingleTestimonial";
 
 export default function Home({ data }) {
   console.log(data);
@@ -12,12 +13,19 @@ export default function Home({ data }) {
     <Box>
       <Head>
         <title></title>
+        <link
+          rel="preload"
+          href="/fonts/ApercuPro-Light.ttf"
+          as="font"
+          crossOrigin=""
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout details={data.scholarship}>
         <Main details={data.scholarship} />
         <About details={data.scholarship} />
         <Faqs faqs={data.scholarship.faqs} />
+        <SingleTestimonial />
       </Layout>
     </Box>
   );
