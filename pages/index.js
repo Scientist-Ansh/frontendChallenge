@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import Main from "@/components/Main";
 import Head from "next/head";
 import Layout from "@/components/Layout";
@@ -15,7 +13,7 @@ export default function Home({ data }) {
         <title></title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Layout details={data.scholarship}>
         <Main details={data.scholarship} />
         <Faqs faqs={data.scholarship.faqs} />
       </Layout>
