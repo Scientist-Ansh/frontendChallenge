@@ -1,6 +1,15 @@
 import { extendTheme } from "@chakra-ui/react";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+
+const breakpoints = createBreakpoints({
+  sm: "400px",
+  md: "801px",
+  lg: "1041px",
+  xl: "1200px",
+});
 
 const theme = extendTheme({
+  breakpoints,
   fonts: {
     heading: `"ApercuPro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;`,

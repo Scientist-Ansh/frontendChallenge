@@ -4,4 +4,18 @@
   left: 50%;
   margin-left: -495px;
   z-index: -1;
+  height: 350px;
+}
+
+.swiper {
+  cursor: url("../public/Drag.png"), default;
+}
+
+@media screen and (max-width: 800px) {
+  .pattern {
+    height: 250px;
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
 }

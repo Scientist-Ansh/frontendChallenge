@@ -1,19 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import SingleTestimonial from "./SingleTestimonial";
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 
 import styles from "@/styles/Testimonials.module.css";
 
 const Testimonials = () => {
+  const [isSmall] = useMediaQuery("(max-width: 800px)");
   return (
     <Box py="50px" mt="200px" position="relative">
       <Image
         className={styles.pattern}
-        src="testimonialPattern.png"
+        src={isSmall ? "purpleBg.png" : "testimonialPattern.png"}
         alt="pattern"
-        height="350px"
       />
       <Swiper
+        className={styles.swiper}
         spaceBetween={40}
         slidesPerView="auto"
         freeMode={true}

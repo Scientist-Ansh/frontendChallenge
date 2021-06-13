@@ -9,7 +9,6 @@ import SingleTestimonial from "@/components/SingleTestimonial";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home({ data }) {
-  console.log(data);
   return (
     <Box overflow="hidden">
       <Head>

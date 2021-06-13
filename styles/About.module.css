@@ -1,7 +1,86 @@
 .image {
   border-radius: 50%;
   background-image: url("../public/circlePattern.png");
-  background-size: 110%;
   padding: 30px;
   background-size: cover;
+  max-height: 400px;
+  margin: auto;
+}
+
+.about {
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 320px;
+  padding: 32px 44px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  margin-right: 25px;
+}
+
+.detail_box {
+  min-width: 300px;
+  max-width: 320px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 32px 20px;
+}
+
+@media screen and (max-width: 1040px) {
+  .detail_box {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .detail_container {
+    flex-wrap: wrap;
+  }
+
+  .details {
+    width: 100%;
+    max-width: none;
+    border: none;
+    margin-right: 0;
+    padding: 32px 3px;
+  }
+  .about {
+    padding: 180px 20px 40px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    background-color: white;
+    margin-top: 100px;
+  }
+  .about::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    right: -100px;
+    height: 90%;
+    background: rgb(104, 93, 197);
+    bottom: 10px;
+    bottom: 5%;
+    z-index: -1;
+  }
+  .image-container {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: -40px;
+  }
+  .image {
+    max-height: 320px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: -20px;
+  }
 }

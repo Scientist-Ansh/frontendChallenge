@@ -6,7 +6,7 @@
   grid-column-gap: 80px;
   grid-auto-flow: column;
 }
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .container :nth-child(3) {
     grid-row: 2;
   }
@@ -36,4 +36,11 @@
   bottom: 50px;
   right: -170px;
   z-index: -1;
+}
+
+.apply_now {
+  color: white;
+  border-radius: 29px !important;
+  padding: 18px 40px !important;
+  height: auto !important;
 }

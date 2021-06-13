@@ -20,22 +20,25 @@ const About = ({ details }) => {
     stipend_per_year,
     study_commitment,
     internship_commitment,
+    duration,
+    study_commitment_text,
+    internship_commitment_text,
   } = details;
   return (
     <Container as="section" maxW="container.lg" mb="78px">
-      <SimpleGrid columns={{ md: 2 }} spacingX="40px" margin="0 auto">
-        <Box p="10px">
+      <SimpleGrid
+        columns={{ md: 2 }}
+        spacingX="40px"
+        m="0 auto"
+        mb={{ base: 5, md: 16 }}
+        position="relative"
+      >
+        <Box className={styles.image_container} p="10px">
           <span>
-            <Image
-              className={styles.image}
-              src="/student.png"
-              alt="student"
-              maxH="400px"
-              m="auto"
-            />
+            <Image className={styles.image} src="/student.png" alt="student" />
           </span>
         </Box>
-        <Box pt="80px" pl="20px">
+        <Box className={styles.about}>
           <Heading
             as="h2"
             fontWeight="semibold"
@@ -48,22 +51,21 @@ const About = ({ details }) => {
           <Text>{about[0].data}</Text>
         </Box>
       </SimpleGrid>
-      <Flex mt="70px" lineHeight="short" fontSize="short">
-        <Flex
-          direction="column"
-          justifyContent="space-between"
-          minW="300px"
-          maxW="320px"
-          p="32px 44px"
-          border="1px solid #DADADA"
-          borderRadius="4px"
-          mr="25px"
-        >
+
+      <Flex
+        lineHeight="short"
+        fontSize="short"
+        className={styles.detail_container}
+      >
+        <div className={styles.details}>
           <Box>
             <Text color="primary" fontWeight="semibold">
               Scholarship Value
             </Text>
-            <Text>{`€${total_value}`}</Text>
+            <Text
+              fontSize={{ base: "normal", md: "tall" }}
+              lineHeight={{ base: "normal", md: "tall" }}
+            >{`€${total_value}`}</Text>
           </Box>
           <Box>
             <Divider mb="40px" />
@@ -72,63 +74,56 @@ const About = ({ details }) => {
                 <Text color="primary" fontWeight="semibold">
                   Tuition covered
                 </Text>
-                <Text>{`€${tuition}`}</Text>
+                <Text
+                  fontSize={{ base: "normal", md: "short" }}
+                  lineHeight={{ base: "normal", md: "short" }}
+                >{`€${tuition}`}</Text>
               </div>
               <div>
                 <Text color="primary" fontWeight="semibold">
                   Remaining
                 </Text>
-                <Text>{`€${total_value - tuition}`}</Text>
+                <Text
+                  fontSize={{ base: "normal", md: "short" }}
+                  lineHeight={{ base: "normal", md: "short" }}
+                >{`€${total_value - tuition}`}</Text>
               </div>
             </Flex>
             <Box mt="20px">
               <Text color="primary" fontWeight="semibold">
                 Living stipend
               </Text>
-              <Text>{`€${stipend_per_year} (€${stipend_per_month}/month)`}</Text>
+              <Text
+                fontSize={{ base: "normal", md: "short" }}
+                lineHeight={{ base: "normal", md: "short" }}
+              >{`€${stipend_per_year} (€${stipend_per_month}/month)`}</Text>
             </Box>
           </Box>
-        </Flex>
+        </div>
         <Flex flexWrap="wrap">
           <Box
-            minW="300px"
-            maxW="320px"
-            border="1px solid #DADADA"
-            borderRadius="4px"
-            p="32px 20px"
-            mr="25px"
+            className={styles.detail_box}
+            mr={{ lg: 5 }}
+            mb={{ base: 5, lg: 0 }}
           >
             <Text color="primary" fontWeight="semibold">
               Study commitment
             </Text>
-            <Text mt="8px" mb="22px">
+            <Text mt="8px" mb="22px" fontSize="normal">
               {study_commitment} hours / day
             </Text>
             <Divider w="25px" mb="16px" />
-            <Text>
-              You will complete 15 modules to graduate. Daily classes are 3
-              hours, plus coursework to complete in your own time.{" "}
-            </Text>
+            <Text>{study_commitment_text}</Text>
           </Box>
-          <Box
-            minW="300px"
-            maxW="320px"
-            border="1px solid #DADADA"
-            borderRadius="4px"
-            p="32px 20px"
-          >
+          <Box className={styles.detail_box}>
             <Text color="primary" fontWeight="semibold">
               Work commitment
             </Text>
-            <Text mt="8px" mb="22px">
+            <Text mt="8px" mb="22px" fontSize="normal">
               {internship_commitment} hours / day
             </Text>
             <Divider w="25px" mb="16px" />
-            <Text>
-              Immerse yourself in the professional world during your
-              apprenticeship. You’ll learn the ropes from the best and get to
-              apply your newly acquired knowledge in the field from day one.{" "}
-            </Text>
+            <Text>{internship_commitment_text}</Text>
           </Box>
           <Flex w="100%" py="20px" alignItems="center">
             <Divider borderColor="#DADADA" opacity={1} />
@@ -144,8 +139,12 @@ const About = ({ details }) => {
             <Text color="primary" fontWeight="semibold">
               A full-time contract
             </Text>
+            <Text mt="8px" mb="22px" fontSize="normal">
+              {duration} Year
+            </Text>
+            <Divider w="25px" mb="16px" />
             <Text>
-              You’ll be guaranteed a 1 year contract with SCG upon graduation.{" "}
+              Successful candidates may be transitioned into full-time roles.
             </Text>
           </Box>
         </Flex>
