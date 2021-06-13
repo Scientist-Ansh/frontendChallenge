@@ -1,6 +1,14 @@
 .program_logo {
   position: absolute;
-  right: 0;
+  top: 0;
+  right: 10px;
   height: 90px;
   transform: rotate(-20deg);
+}
+
+.pattern {
+  position: absolute;
+  bottom: 50px;
+  right: -170px;
+  z-index: -1;
 }

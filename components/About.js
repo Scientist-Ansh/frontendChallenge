@@ -30,7 +30,7 @@ const About = ({ details }) => {
               className={styles.image}
               src="/student.png"
               alt="student"
-              maxH="300px"
+              maxH="400px"
               m="auto"
             />
           </span>

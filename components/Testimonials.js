@@ -1,12 +1,20 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import SingleTestimonial from "./SingleTestimonial";
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
+
+import styles from "@/styles/Testimonials.module.css";
 
 const Testimonials = () => {
   return (
-    <Box py="50px" mt="100px">
+    <Box py="50px" mt="200px" position="relative">
+      <Image
+        className={styles.pattern}
+        src="testimonialPattern.png"
+        alt="pattern"
+        height="350px"
+      />
       <Swiper
-        spaceBetween={10}
+        spaceBetween={40}
         slidesPerView="auto"
         freeMode={true}
         onSlideChange={() => console.log("slide change")}

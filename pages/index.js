@@ -11,7 +11,7 @@ import Testimonials from "@/components/Testimonials";
 export default function Home({ data }) {
   console.log(data);
   return (
-    <Box>
+    <Box overflow="hidden">
       <Head>
         <title></title>
         <link

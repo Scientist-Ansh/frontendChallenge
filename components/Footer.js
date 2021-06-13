@@ -49,7 +49,7 @@ const Footer = ({
         </div>
         <div>
           <Text fontWeight="semibold">Application closes in</Text>
-          <Text>some time</Text>
+          <Text>00 Days : 00 Hrs : 00 Min : 00 Sec</Text>
         </div>
       </Stack>
     </Flex>

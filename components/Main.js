@@ -31,7 +31,7 @@ const Main = ({ details }) => {
       `;
   };
   return (
-    <Container as="main" maxW="container.lg" py="100px">
+    <Container as="main" maxW="container.lg" py="100px" position="relative">
       <SimpleGrid columns={{ md: 2 }} spacingX="60px" margin="0 auto">
         <Box position="relative">
           <Image
@@ -86,7 +86,9 @@ const Main = ({ details }) => {
             <Text color="primary" fontWeight="semibold">
               Application closes in
             </Text>
-            <Text>Some time</Text>
+            <Text lineHeight="short" fontSize="24px" mt="5px">
+              00 Days : 00 Hrs : 00 Min : 00 Sec
+            </Text>
           </Box>
           <Flex
             p="40px 40px 17px 40px"
@@ -96,6 +98,7 @@ const Main = ({ details }) => {
             borderRadius="4px"
             flexWrap="wrap"
             mt="30px"
+            bg="white"
           >
             <Box w="50%" mb="23px">
               <Text color="primary" fontWeight="semibold">
@@ -124,6 +127,7 @@ const Main = ({ details }) => {
           </Flex>
         </Box>
       </SimpleGrid>
+      <Image className={styles.pattern} src="mainPattern.png" alt="pattern" />
     </Container>
   );
 };

@@ -7,6 +7,7 @@ const SingleTestimonial = () => (
     border="1px solid #DADADA"
     borderRadius="4px"
     m="2"
+    bg="white"
   >
     <Flex
       justifyContent="space-between"
@@ -15,8 +16,8 @@ const SingleTestimonial = () => (
       lineHeight="short"
       fontSize="short"
     >
-      <Stack spacing={2} isInline alignItems="center">
-        <Avatar />
+      <Stack spacing={5} isInline alignItems="center">
+        <Avatar size="lg" />
         <Box>
           <Text fontWeight="semibold">Irene Pereyra</Text>
           <Text>Interaction Design Fellow ‘19</Text>

@@ -31,7 +31,7 @@ const Faqs = ({ faqs }) => {
   };
 
   return (
-    <Container as="section" maxW="container.lg">
+    <Container as="section" maxW="container.lg" pt="100px">
       <Flex justifyContent="space-between" alignItems="center" mb="64px">
         <Heading as="h2" color="primary" fontWeight="semibold" fontSize="48px">
           Frequently asked <br /> Questions

@@ -1,6 +1,7 @@
-.items {
-  display: flex;
-  overflow-x: scroll;
-  width: 100%;
-  flex-wrap: nowrap;
+.pattern {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  margin-left: -495px;
+  z-index: -1;
 }

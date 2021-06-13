@@ -1,3 +1,7 @@
 .image {
   border-radius: 50%;
+  background-image: url("../public/circlePattern.png");
+  background-size: 110%;
+  padding: 30px;
+  background-size: cover;
 }
