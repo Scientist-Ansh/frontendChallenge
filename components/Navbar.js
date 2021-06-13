@@ -3,7 +3,7 @@ import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <Flex as="header" bg="primary" className={styles.navbar}>
+    <Flex as="header" bg="primary" className={styles.navbar} zIndex="10">
       <div>
         <Image src="harbourLogo.svg" fill="white" h="15px" alt="logo"></Image>
       </div>

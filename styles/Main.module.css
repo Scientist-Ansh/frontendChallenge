@@ -1,0 +1,6 @@
+.program_logo {
+  position: absolute;
+  right: 0;
+  height: 90px;
+  transform: rotate(-20deg);
+}

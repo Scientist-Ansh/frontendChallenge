@@ -131,9 +131,9 @@ const About = ({ details }) => {
             </Text>
           </Box>
           <Flex w="100%" py="20px" alignItems="center">
-            <Divider h="2px" />
+            <Divider borderColor="#DADADA" opacity={1} />
             <Text px="10px">Graduation</Text>
-            <Divider />
+            <Divider borderColor="#DADADA" opacity={1} />
           </Flex>
           <Box
             border="1px solid #DADADA"

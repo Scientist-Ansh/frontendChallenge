@@ -1,7 +1,13 @@
 import { Box, Avatar, Flex, Stack, Text, Image } from "@chakra-ui/react";
 
 const SingleTestimonial = () => (
-  <Box maxWidth="800px" px="30px" border="1px solid #DADADA" borderRadius="4px">
+  <Box
+    maxWidth="800px"
+    px="30px"
+    border="1px solid #DADADA"
+    borderRadius="4px"
+    m="2"
+  >
     <Flex
       justifyContent="space-between"
       height="120px"

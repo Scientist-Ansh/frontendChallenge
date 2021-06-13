@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "../styles/styles.css";
+import "swiper/swiper-bundle.min.css";
 
 import theme from "@/styles/theme";
 

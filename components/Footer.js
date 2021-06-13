@@ -24,6 +24,7 @@ const Footer = ({
       w="100%"
       borderTop="1px solid rgb(218, 218, 218);"
       bg="white"
+      zIndex="10"
     >
       <Stack isInline spacing={10} fontSize="short" lineHeight="short">
         <div>

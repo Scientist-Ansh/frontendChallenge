@@ -20,3 +20,8 @@ a {
   font-weight: 300;
   font-display: swap;
 }
+
+/* overriding default swiper style to work to remove slidesPerview */
+.swiper-slide {
+  width: auto !important;
+}
