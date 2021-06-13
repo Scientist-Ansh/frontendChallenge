@@ -32,7 +32,105 @@ const Main = ({ details }) => {
   };
   return (
     <Container as="main" maxW="container.lg" py="100px" position="relative">
-      <SimpleGrid columns={{ md: 2 }} spacingX="60px" margin="0 auto">
+      <div className={styles.container}>
+        <Box className={styles.child} position="relative">
+          <Image
+            className={styles.program_logo}
+            src={program_logo.src}
+            alt="program logo"
+          />
+          <Heading
+            as="h1"
+            color="primary"
+            fontWeight="semibold"
+            lineHeight="tall"
+            fontSize="tall"
+          >
+            {details.name}
+          </Heading>
+        </Box>
+        <div className={styles.child}>
+          <Text mt="32px" mb="40px" fontWeight="semibold">
+            A fully funded work-study program to launch your tech career{" "}
+          </Text>
+          <Text>{details.description[0].data}</Text>
+          <Text mt="30px" mb="40px">
+            <Text as="span" fontWeight="semibold">
+              Position:{" "}
+            </Text>
+            {details.position ? details.position : details.name}
+          </Text>
+          <Button
+            color="white"
+            bg="primary"
+            borderRadius="29px"
+            p="18px 40px"
+            h="auto"
+          >
+            Apply Now
+          </Button>
+        </div>
+
+        <div className={styles.child}>
+          <Stack spacing={0} isInline alignItems="center" mb="30px">
+            <Image src={logo_dark.src} alt="logo" ml="-40px" height="100px" />
+            <Box>
+              <Text fontWeight="semibold">Powered by:</Text>
+              <Text>{companyName}</Text>
+            </Box>
+          </Stack>
+          <Box
+            p="40px"
+            fontSize="short"
+            lineHeight="short"
+            border="1px solid #DADADA"
+            borderRadius="4px"
+          >
+            <Text color="primary" fontWeight="semibold">
+              Application closes in
+            </Text>
+            <Text lineHeight="short" fontSize="24px" mt="5px">
+              00 Days : 00 Hrs : 00 Min : 00 Sec
+            </Text>
+          </Box>
+          <Flex
+            p="40px 40px 17px 40px"
+            fontSize="short"
+            lineHeight="short"
+            border="1px solid #DADADA"
+            borderRadius="4px"
+            flexWrap="wrap"
+            mt="30px"
+            bg="white"
+          >
+            <Box w="50%" mb="23px">
+              <Text color="primary" fontWeight="semibold">
+                Location
+              </Text>
+              <Text>{location.name}</Text>
+            </Box>
+            <Box w="50%" mb="23px">
+              <Text color="primary" fontWeight="semibold">
+                Duration
+              </Text>
+              <Text>{`${duration} Year`}</Text>
+            </Box>
+            <Box w="50%" mb="23px">
+              <Text color="primary" fontWeight="semibold">
+                Start Date
+              </Text>
+              <Text>{getDate(startDate)}</Text>
+            </Box>
+            <Box w="50%" mb="23px">
+              <Text color="primary" fontWeight="semibold">
+                End Date
+              </Text>
+              <Text>{getDate(deadline)}</Text>
+            </Box>
+          </Flex>
+        </div>
+      </div>
+      {/* <SimpleGrid columns={{ md: 2 }} spacingX="60px" margin="0 auto">
         <Box position="relative">
           <Image
             className={styles.program_logo}
@@ -68,6 +166,7 @@ const Main = ({ details }) => {
             Apply Now
           </Button>
         </Box>
+
         <Box>
           <Stack spacing={0} isInline alignItems="center" mb="30px">
             <Image src={logo_dark.src} alt="logo" ml="-40px" height="100px" />
@@ -126,7 +225,7 @@ const Main = ({ details }) => {
             </Box>
           </Flex>
         </Box>
-      </SimpleGrid>
+      </SimpleGrid> */}
       <Image className={styles.pattern} src="mainPattern.png" alt="pattern" />
     </Container>
   );
