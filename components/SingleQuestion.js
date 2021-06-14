@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
   Box,
   Image,
 } from "@chakra-ui/react";

@@ -43,7 +43,7 @@ const About = ({ details }) => {
             as="h2"
             fontWeight="semibold"
             color="primary"
-            fontSize="48"
+            fontSize={{ base: "35px", md: "tall" }}
             mb="40px"
           >
             About the apprenticeship

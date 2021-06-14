@@ -12,14 +12,20 @@ export default function Home({ data }) {
   return (
     <Box overflow="hidden">
       <Head>
-        <title></title>
+        <title>Harbour.Space</title>
+        <meta name="title" content={data.meta.title}></meta>
+        <meta name="description" content={data.meta.description}></meta>
+        <meta property="og:url" content={data.og_meta.page_url} />
+        <meta name="og:title" content={data.og_meta.title}></meta>
+        <meta property="og:image" content={data.og_meta.image_url} />
+        <meta property="og:description" content={data.og_meta.desc} />
         <link
           rel="preload"
           href="/fonts/ApercuPro-Light.ttf"
           as="font"
           crossOrigin=""
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout details={data.scholarship}>
         <Main details={data.scholarship} />

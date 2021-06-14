@@ -6,18 +6,7 @@
   grid-column-gap: 80px;
   grid-auto-flow: column;
 }
-@media screen and (max-width: 800px) {
-  .container :nth-child(3) {
-    grid-row: 2;
-  }
-  .container {
-    display: grid;
-    grid-template-rows: repeat(1);
-    grid-template-columns: none;
-    grid-auto-flow: initial;
-    gap: 1rem;
-  }
-}
+
 .child {
   margin: 1%;
   height: 100%;
@@ -43,4 +32,20 @@
   border-radius: 29px !important;
   padding: 18px 40px !important;
   height: auto !important;
+}
+
+@media screen and (max-width: 800px) {
+  .container :nth-child(3) {
+    grid-row: 2;
+  }
+  .container {
+    display: grid;
+    grid-template-rows: repeat(1);
+    grid-template-columns: none;
+    grid-auto-flow: initial;
+    gap: 1rem;
+  }
+  .program_logo {
+    top: -40px;
+  }
 }

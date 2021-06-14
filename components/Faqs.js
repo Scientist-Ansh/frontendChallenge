@@ -22,18 +22,38 @@ const Faqs = ({ faqs }) => {
     items: items.filter((item) => item.type === allCategories[0]),
   });
 
+  const [reset, setReset] = useState(-1);
+
   const handleCategory = (category) => {
     console.log(category);
     setSelectedFaq({
       category,
       items: items.filter((item) => item.type === category),
     });
+    setReset(-1);
   };
 
   return (
-    <Container as="section" maxW="container.lg" pt="100px">
-      <Flex justifyContent="space-between" alignItems="center" mb="64px">
-        <Heading as="h2" color="primary" fontWeight="semibold" fontSize="48px">
+    <Container
+      as="section"
+      maxW="container.lg"
+      pt="50px"
+      mb={{ base: "100px", lg: "200px" }}
+    >
+      <Flex
+        justifyContent="space-between"
+        alignItems="center"
+        mb="64px"
+        flexWrap="wrap"
+      >
+        <Heading
+          as="h2"
+          color="primary"
+          fontWeight="semibold"
+          fontSize={{ base: "35px", md: "tall" }}
+          w={{ base: "100%", md: "auto" }}
+          mb={{ base: "32px", md: 0 }}
+        >
           Frequently asked <br /> Questions
         </Heading>
 
@@ -72,7 +92,7 @@ const Faqs = ({ faqs }) => {
           </Menu>
         </Flex>
       </Flex>
-      <Accordion allowMultiple>
+      <Accordion allowMultiple defaultIndex={reset} allowToggle>
         {selectedFaq.items.map((item, i) => (
           <SingleQuestion question={item} key={i} />
         ))}

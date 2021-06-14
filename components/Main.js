@@ -42,8 +42,7 @@ const Main = ({ details }) => {
             as="h1"
             color="primary"
             fontWeight="semibold"
-            lineHeight="tall"
-            fontSize="tall"
+            fontSize={{ base: "35px", md: "tall" }}
           >
             {details.name}
           </Heading>
@@ -65,13 +64,13 @@ const Main = ({ details }) => {
         </div>
 
         <div className={styles.child}>
-          <Stack spacing={0} isInline alignItems="center" mb="30px">
+          <Flex spacing={0} alignItems="center" mb="30px" flexWrap="wrap">
             <Image src={logo_dark.src} alt="logo" ml="-40px" height="100px" />
-            <Box>
-              <Text fontWeight="semibold">Powered by:</Text>
-              <Text>{companyName}</Text>
+            <Box w={{ base: "100%", md: "auto" }} order={{ base: -1, md: 1 }}>
+              <Text>Powered by:</Text>
+              <Text fontWeight="semibold">{companyName}</Text>
             </Box>
-          </Stack>
+          </Flex>
           <Box
             p="40px"
             fontSize="short"
@@ -123,7 +122,12 @@ const Main = ({ details }) => {
           </Flex>
         </div>
       </div>
-      <Image className={styles.pattern} src="mainPattern.png" alt="pattern" />
+      <Image
+        className={styles.pattern}
+        display={{ base: "none", md: "block" }}
+        src="mainPattern.png"
+        alt="pattern"
+      />
     </Container>
   );
 };
