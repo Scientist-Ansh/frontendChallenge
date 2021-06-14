@@ -37,6 +37,7 @@ const Main = ({ details }) => {
             className={styles.program_logo}
             src={program_logo.src}
             alt="program logo"
+            right={{ lg: "60px" }}
           />
           <Heading
             as="h1"

@@ -32,8 +32,22 @@
   border-radius: 29px !important;
   padding: 18px 40px !important;
   height: auto !important;
+  transition: transform 0.1 ease-in-out;
 }
 
+.apply_now:hover {
+  box-shadow: none !important;
+  background-color: #3a3189 !important;
+  transform: scale(1.05);
+}
+.apply_now:active {
+  box-shadow: none !important;
+  background-color: #685dc5 !important;
+}
+.apply_now:focus {
+  box-shadow: none !important;
+  /* background-color: #3a3189 !important; */
+}
 @media screen and (max-width: 800px) {
   .container :nth-child(3) {
     grid-row: 2;

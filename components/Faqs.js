@@ -12,7 +12,9 @@ import {
   Button,
   Image,
 } from "@chakra-ui/react";
+
 import SingleQuestion from "./SingleQuestion";
+import styles from "@/styles/Faqs.module.css";
 
 const Faqs = ({ faqs }) => {
   const { items, categories: allCategories } = faqs;
@@ -63,12 +65,12 @@ const Faqs = ({ faqs }) => {
           </Text>
           <Menu>
             <MenuButton
+              className={styles.button}
               as={Button}
               variant="outline"
               color="primary"
               borderRadius="20px"
               p="17px 24px"
-              boxShadow="none"
             >
               {selectedFaq.category}
               <Image
