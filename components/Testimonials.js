@@ -24,13 +24,13 @@ const Testimonials = () => {
         loop={true}
       >
         <SwiperSlide>
-          <SingleTestimonial />
+          <SingleTestimonial src="https://bit.ly/dan-abramov" />
         </SwiperSlide>
         <SwiperSlide>
-          <SingleTestimonial />
+          <SingleTestimonial src="https://bit.ly/kent-c-dodds" />
         </SwiperSlide>
         <SwiperSlide>
-          <SingleTestimonial />
+          <SingleTestimonial src="https://bit.ly/ryan-florence" />
         </SwiperSlide>
       </Swiper>
     </Box>

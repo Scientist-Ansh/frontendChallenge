@@ -1,15 +1,6 @@
 import { Box, Avatar, Flex, Stack, Text, Image } from "@chakra-ui/react";
 
-const srcs = [
-  "https://bit.ly/dan-abramov",
-  "https://bit.ly/kent-c-dodds",
-  "https://bit.ly/ryan-florence",
-  "https://bit.ly/prosper-baba",
-  "https://bit.ly/code-beast",
-];
-
-const SingleTestimonial = () => {
-  const srcNumber = Math.floor(Math.random() * srcs.length);
+const SingleTestimonial = ({ src }) => {
   return (
     <Box
       maxW={{ base: "300px", md: "600px", lg: "800px" }}
@@ -27,7 +18,7 @@ const SingleTestimonial = () => {
         fontSize="short"
       >
         <Stack spacing={5} isInline alignItems="center" mr="10px">
-          <Avatar size="lg" src={srcs[srcNumber]} />
+          <Avatar size="lg" src={src} />
           <Box>
             <Text fontWeight="semibold">Irene Pereyra</Text>
             <Text>Interaction Design Fellow ‘19</Text>
