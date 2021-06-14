@@ -1,3 +1,6 @@
+### Note
+The Draggable testimonials component has hard coded data as of now because the testiomonials from the backend was an empty array.
+
 ## Introduction
 
 This Project is made as part of a task from Harbour.Space
@@ -51,4 +54,6 @@ lg: "1041px",
 xl: "1200px",
 
 #### FontFamily- ApercuPro-Light
+
+ 
 
