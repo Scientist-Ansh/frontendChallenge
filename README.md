@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Note
+The Draggable testimonials component has hard coded data as of now because the testiomonials from the backend was an empty array.
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This Project is made as part of a task from Harbour.Space
 
+### Deployed link - [Website](https://frontend-challenge-nine.vercel.app/)
+
+To run the Project locally use the following command
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Details
+### Nextjs
+I have made the the Project using Nextjs and a static site is build by getting the api data at the build time and using it to create the app.
+Features like absolute imports, css modules are also utilized.
+Also og meta tags are also utilized.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### ChakraUI
+It is component library for React. It is used to get the global theme and used to make the site responsive along with media queries.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Swiper
+This library was used to make the draggable slider component.
 
-## Learn More
+## Styling
+Most of the project uses the below styles.
 
-To learn more about Next.js, take a look at the following resources:
+#### FontSize
+short: "16px",
+normal: "22px",
+tall: "48px",
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### FontWeight
+normal:"300"
+semiBold:"600"
+bold:"700"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### LineHeight
+short: "24px",
+normal: "32px",
+tall: "56px",
 
-## Deploy on Vercel
+#### PrimaryColor:"#685DC5"
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Breakpoints
+sm: "400px",
+md: "801px",
+lg: "1041px",
+xl: "1200px",
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### FontFamily- ApercuPro-Light
+
+ 
+
