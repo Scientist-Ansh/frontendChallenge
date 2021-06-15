@@ -11,11 +11,27 @@
   cursor: url("../public/Drag.png"), default;
 }
 
+.slide {
+  color: #685dc5;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 24px;
+}
+
 @media screen and (max-width: 800px) {
   .pattern {
     height: 250px;
     width: 100%;
     margin-left: 0;
     left: 0;
+  }
+  .swiper {
+    cursor: initial;
   }
 }

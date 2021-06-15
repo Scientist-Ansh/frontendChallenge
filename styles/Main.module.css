@@ -60,6 +60,7 @@
     gap: 1rem;
   }
   .program_logo {
-    top: -40px;
+    top: -30px;
+    height: 70px;
   }
 }

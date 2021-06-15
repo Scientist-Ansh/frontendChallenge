@@ -21,7 +21,7 @@ const SingleTestimonial = ({ src }) => {
           <Avatar size="lg" src={src} />
           <Box>
             <Text fontWeight="semibold">Irene Pereyra</Text>
-            <Text>Interaction Design Fellow ‘19</Text>
+            <Text>Data Science Fellow ‘19</Text>
           </Box>
         </Stack>
         <Image height="20px" width="20px" src="linkedIn.svg" alt="linkedIn" />
