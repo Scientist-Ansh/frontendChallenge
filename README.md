@@ -56,4 +56,11 @@ xl: "1200px",
 #### FontFamily- ApercuPro-Light
 
  
-
+ ### Further Improvements
+ Make font styles more responsive and compatible with small screen.
+ 
+ Add a Menu in navbar
+ 
+ Make the microinteraction of button using Css, currently using gif.
+ 
+ 
